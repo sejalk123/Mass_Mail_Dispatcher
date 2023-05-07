@@ -1,0 +1,110 @@
+//index.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mass-Mail Dispatcher Website by Sejal Kalambhe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- <style> 
+         .bg {
+            background-image: url("images/wallpaper.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>  -->
+</head>
+
+<body>
+    <nav>
+        <ul>
+            </li> <a href=""><h1><i class="fa-solid fa-lightbulb"></i> Exposys Data Lab</h1></a> </li>
+            
+        </ul>
+    </nav>
+    <div class="bg">
+        
+        <div class="container">
+            
+            <div class="select animated fadeInDown delay-10s">
+                <h1 id="head">Mass Mail Dispatcher</h1>
+                 
+
+                <input type="file" id="upload" accept="text/csv">  
+                
+            </div>
+            <div class="mailInfo">  
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2 id="box-heading">WRITE YOUR MAIL HERE</h2>
+                    <p><input type="email" id="from" placeholder="From (Email ID)" required></p>
+
+                    <p><input type="text" id="subject" placeholder="Subject" required></p>
+                    <p><textarea id="msg" rows="12" cols="12" placeholder="Message" required></textarea></p>
+                    <p><button type="submit" id="submit">Send</button></p>
+                </form>
+            </div>
+            <h1 class="lkj">  Check The Valid/Invalid Email :)</h1>
+        </div>
+        <hr>
+        
+        <div class="tables">  
+            <div class="valTab">
+                
+                <table id="val">     
+                    <tr>
+                        <td>
+                            <h2>Valid Emails : <span id="valCount"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="invalTab">
+                <table id="inval">       
+                    <tr>
+                        <td>
+                            <h2>Invalid Emails : <span id="invalCount"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>var wow = new WOW(
+            {
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+                },
+                scrollContainer: null,
+                resetAnimation: true,
+            }
+        );
+        wow.init();
+    </script>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright">Made with ❤️ By <a href="https://www.linkedin.com/in/sejal-kalambhe-937032212" target="_blank">Sejal Kalambhe</a></p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
+
+
