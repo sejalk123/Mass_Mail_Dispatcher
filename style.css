@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+}
+ 
+.fa-solid {
+    color: yellow;
+}
+.lkj{
+    color: #012c0e;
+}
+body{
+    /* background-color:moccasin; */
+    /* background-image: url("images/wallpaper10.jpg");  */
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background: linear-gradient(to top left,#edff64,#50fd10);
+    /* background: linear-gradient(to top left,#FCCF31 , #F55555); */
+
+}
+
+ul{
+
+    list-style-type: none;
+    text-align: left;
+    padding:30px;
+    background-color:rgb(3, 3, 16);
+    color: rgb(255, 255, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    /* word-spacing: 0.5rem; */
+}
+
+li{
+    display:inline;
+    padding:20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+/* li:hover{
+    color:blueviolet;
+    cursor:pointer;
+    background-color: rgb(146, 223, 219);
+} */
+
+a{
+    text-decoration:none;
+    color: white;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height:100vh;
+    flex-wrap: wrap;
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+}
+
+#head{
+    font-size:50px;
+    text-align: left;
+}
+/* .mailInfo{
+    width:600px;
+    margin:0 auto;
+    position:relative;
+    top:40%;
+    transform:translateY(-70%);
+    padding: 20px 40px;
+    background: linear-gradient(to top left,#ffffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow:2px 2px 5px #2773a5;
+} */
+
+#box-heading{
+    padding:5px;
+    margin:auto;
+    text-align: center;
+}
+
+.mailInfo{
+    /* display: flex; */
+    width:500px;
+    /* height:600px; */
+    position: relative;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height:65%;
+    background-color: rgb(204, 211, 214);
+    /* border: 2px solid red; */
+    /* gap:10px; */
+    background: linear-gradient(to top left,#ffffffff,#ffffff33);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+    box-shadow:2px 2px 5px #2773a5;
+    z-index: 2;
+}
+
+#from,#subject{
+
+    margin:14px;
+    padding:10px;
+    width: 470px;
+    height:40px;
+    border-radius: 4px;
+}
+#msg{
+    margin:14px;
+    padding:10px;
+    width: 40px;
+    width:470px;
+    border-radius: 4px;
+}
+
+#submit{
+    width:10em;
+    height:3em;
+    margin:0;
+    position:absolute;
+    top:92%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    border-radius: 30px;
+    }
+
+button {
+    background: #00332a;
+    color: #e6dede;
+    border: 2px solid #0f0909;
+    font-size: 17px;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 15px 30px;
+    -webkit-transition: all 0.4s;
+   -moz-transition: all 0.4s;
+   transition: all 0.4s;
+   box-shadow : 0 1px 1px #130b0b;
+  }
+  button:hover, button:focus {
+    background-color: rgb(27, 177, 144);
+    color: #b93d2d;
+  }
+
+/* #submit:hover{
+    background-color:#579c57;
+} */
+
+.select input{
+    background-color: rgb(255,255,255);
+    border :none;
+    margin : 6vh auto;
+    border-radius: 50px;
+    box-shadow:5px 5px 10px black;
+    font-weight: 600;
+    font-size: 1rem;
+    outline:none;
+    width:350px;
+}
+
+.select input::file-selector-button{
+    background: #00332a;
+    color:white;
+    padding:20px;
+    border:none;
+    border-radius: 50px;
+    box-shadow : 0 1px 1px #6b4559;
+    outline:none;
+}
+
+.select input::file-selector-button:hover{
+    background-color: rgb(27, 177, 144);
+    cursor: pointer;
+}
+
+.tables{
+    /* text-align: center; */
+    /* border: 2px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+}
+
+table{
+    text-align: left;
+    float:left;
+    width: 500px;
+}
+
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+     
+  }
+
+.footer-basic .copyright {
+    margin-top:15px;
+    width:100%;
+    height:30px;
+    text-align:center;
+    font-size:18px;
+    background-color: rgba(15, 13, 13, 0.918);;
+    color:#aaa;
+    margin-bottom:0;
+  }
